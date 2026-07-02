@@ -7,4 +7,4 @@ title: Home
 
 We provide compassionate, personalized fertility treatment with the highest medical standards.
 
-[Book a Consultation](/consultation)
+[Book a Consultation](/fertility-clinic/consultation)
