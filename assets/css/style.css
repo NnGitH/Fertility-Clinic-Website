@@ -46,11 +46,30 @@ nav a {
   font-weight: 500;
 }
 
+nav a:hover {
+  color: #2c5f7c;
+}
+
 /* Main Content */
 main {
   max-width: 1100px;
   margin: 40px auto;
   padding: 0 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c5f7c;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+}
+
+a {
+  color: #2c5f7c;
 }
 
 /* Footer */
@@ -60,4 +79,9 @@ footer {
   text-align: center;
   padding: 30px;
   margin-top: 60px;
+}
+
+footer p {
+  color: white;
+  margin-bottom: 5px;
 }
