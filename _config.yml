@@ -1,7 +1,7 @@
 title: Fertility Clinic
 email: info@yourclinic.com
 description: Compassionate and expert fertility care in Cyprus.
-baseurl: "/fertility-clinic"
+baseurl: "/Fertility-Clinic"
 url: "https://nngith.github.io"
 markdown: kramdown
 permalink: pretty
