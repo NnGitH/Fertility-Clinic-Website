@@ -1,1 +1,15 @@
+title: Fertility Clinic
+email: info@yourclinic.com
+description: Compassionate and expert fertility care in Cyprus.
+baseurl: ""
+url: ""
 
+# Theme settings
+markdown: kramdown
+permalink: pretty
+
+# Navigation
+header_pages:
+  - about.md
+  - consultation.md
+  - contact.md
