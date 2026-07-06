@@ -1,25 +1,4 @@
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-col">
-      <h4>NovaLife Medica</h4>
-      <p>Fertility &amp; Reproductive Consultants</p>
-      <p>Personalised, discreet, evidence-based care.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Visit Us</h4>
-      <p>{{ site.address_line1 }}</p>
-      <p>{{ site.address_line2 }}</p>
-      <p>{{ site.address_city }}</p>
-    </div>
-    <div class="footer-col">
-      <h4>Get in Touch</h4>
-      <!-- EDIT: phone & email are pulled from _config.yml -->
-      <p>Phone: {{ site.phone }}</p>
-      <p>Email: {{ site.email }}</p>
-      <p><a href="{{ site.baseurl }}/consultation">Book a Consultation &rarr;</a></p>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved. &middot; Private and confidential care.</p>
-  </div>
+<footer>
+  <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
+  <p>Private and confidential care.</p>
 </footer>
