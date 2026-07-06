@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Contact
+title: About Us
 ---
 
-# Contact Us
+# About Our Clinic
 
-**Phone:** +357 XXX XXXX  
-**Email:** info@yourclinic.com  
-**Address:** Nicosia, Cyprus
+We are a dedicated team of fertility specialists committed to helping you build your family.
+
+Our mission is to provide compassionate, personalised fertility care in a supportive environment.
