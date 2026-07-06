@@ -1,8 +1,32 @@
 title: NovaLife Medica
 tagline: Fertility & Reproductive Consultants
 email: info@novalife-medica.com
-description: Fertility and reproductive health clinical decision led consultation. Personalised, discreet and evidenced cared for your journey to parenthood. 
+description: >-
+  NovaLife Medica offers clinical decision-led fertility and reproductive
+  health consultation in Limassol, Cyprus. Personalised, discreet and
+  evidence-based care for your journey to parenthood.
 baseurl: "/fertility-clinic"
 url: "https://nngith.github.io"
 markdown: kramdown
 permalink: pretty
+
+# =========================================================
+#  QUICK-EDIT SETTINGS  (change these values, no code needed)
+# =========================================================
+# Booking link (Calendly) — replace with your real Calendly URL.
+calendly_url: "https://calendly.com/your-calendly-username/consultation"
+
+# Formspree form endpoint — replace XXXXXXXX with your form ID
+# from https://formspree.io  (see instructions in consultation.md).
+formspree_id: "XXXXXXXX"
+
+# Contact details — fill these in (they appear on the Contact page & footer).
+phone: "+357 00 000000"
+whatsapp: "+357 00 000000"
+address_line1: "Archiepiskopou Leontiou A 232"
+address_line2: "1st Floor, Apt 13"
+address_city: "Limassol 3021, Cyprus"
+# Operating hours (edit freely)
+hours_weekday: "Monday – Friday: 9:00 – 17:00"
+hours_saturday: "Saturday: By appointment"
+hours_sunday: "Sunday: Closed"
