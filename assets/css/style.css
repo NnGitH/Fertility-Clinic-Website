@@ -143,6 +143,8 @@ ul { list-style: none; }
 .hero-panel.panel-left {
   text-align: left;
   border-right: 1px solid rgba(255,255,255,0.25);
+  align-self: flex-start; 
+  margin-top:40%; 
 }
 
 .hero-panel.panel-right {
