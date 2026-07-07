@@ -139,11 +139,11 @@ ul { list-style: none; }
   flex: 1;
   padding: 2rem 2.5rem;
   background: transparent;
+  max-widht:50%
 }
 
 .hero-panel.panel-left {
   text-align: left;
-  border-right: 1px solid rgba(255,255,255,0.25);
   align-self: flex-start; 
   margin-top:-15%; 
 }
@@ -194,7 +194,7 @@ ul { list-style: none; }
   font-size: 0.78rem;
   letter-spacing: 0.05em;
   padding: 0.35rem 1rem;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
@@ -203,7 +203,7 @@ ul { list-style: none; }
   font-size: 0.75rem;
   line-height: 1;
   padding: 0.1rem 0;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
