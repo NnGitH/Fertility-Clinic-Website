@@ -94,7 +94,7 @@ body {
     url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80');
   background-size: cover;
   background-position: center;
-  min-height: 88vh;
+  min-height: 48vh;
   display: flex;
   align-items: center;
   justify-content: center;
