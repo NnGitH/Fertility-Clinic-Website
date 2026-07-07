@@ -94,63 +94,79 @@ body {
     url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80');
   background-size: cover;
   background-position: center;
-  min-height: 48vh;
+  height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem 0;
+}
+
+.hero-content {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
 }
-
-.hero-content { max-width: 750px; }
 
 .hero-content h1 {
   font-family: var(--font-heading);
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: white;
   font-weight: 400;
   line-height: 1.2;
-  margin-bottom: 1.2rem;
+  max-width: 750px;
 }
-
-.hero-content p {
-  font-size: 1.15rem;
-  color: rgba(255,255,255,0.9);
-  font-weight: 300;
-  margin-bottom: 2rem;
-  max-width: 550px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.85rem 2.2rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  transition: all 0.25s;
-}
-
-.btn-primary {
-  background: white;
-  color: var(--navy);
-  font-weight: 700;
-  margin-right: 0.75rem;
-}
-
-.btn-primary:hover { background: var(--off-white); transform: translateY(-1px); }
-
-.btn-outline {
-  border: 2px solid white;
-  color: white;
-}
-
-.btn-outline:hover { background: white; color: var(--navy); }
 
 /* =====================
-   CONTENT SECTIONS
+   HERO BOTTOM PANELS
+   ===================== */
+.hero-panels {
+  display: flex;
+  gap: 0;
+  width: 100%;
+}
+
+.hero-panel {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  background: rgba(255,255,255,0.92);
+}
+
+.hero-panel:first-child {
+  border-right: 1px solid #e8e0d8;
+}
+
+.hero-panel h3 {
+  font-family: var(--font-heading);
+  color: var(--navy);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.7rem;
+}
+
+.hero-panel p {
+  color: var(--text-mid);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+  padding: 1.2rem 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+footer p { margin-bottom: 0.3rem; }
+
+/* =====================
+   CONTENT PAGES (non-home)
    ===================== */
 .section {
   max-width: 900px;
@@ -167,67 +183,15 @@ body {
 
 .section h1 { font-size: 2.2rem; }
 .section h2 { font-size: 1.7rem; margin-top: 2.5rem; }
-.section p  { color: var(--text-mid); margin-bottom: 1rem; }
-
-/* =====================
-   FOOTER
-   ===================== */
-footer {
-  background: var(--navy);
-  color: rgba(255,255,255,0.75);
-  text-align: center;
-  padding: 2.5rem 2rem;
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
-}
-
-footer p { margin-bottom: 0.3rem; }
-
-/* =====================
-   HOME CARDS ROW
-   ===================== */
-.cards-row {
-  display: flex;
-  gap: 0;
-  min-height: 42vh;
-}
-
-.info-card {
-  flex: 1;
-  padding: 2.5rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.info-card:nth-child(1) { background: var(--off-white); }
-.info-card:nth-child(2) { background: var(--warm-white); }
-.info-card:nth-child(3) { background: var(--off-white); }
-
-.info-card h3 {
-  font-family: var(--font-heading);
-  color: var(--navy);
-  font-size: 1.3rem;
-  font-weight: 400;
-  margin-bottom: 0.8rem;
-}
-
-.info-card p {
-  color: var(--text-mid);
-  font-size: 0.9rem;
-  line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-  .cards-row { flex-direction: column; min-height: auto; }
-  .info-card { min-height: 30vh; }
-}
+.section p { color: var(--text-mid); margin-bottom: 1rem; }
 
 /* =====================
    RESPONSIVE
    ===================== */
 @media (max-width: 768px) {
-  .hero-content h1 { font-size: 2.1rem; }
+  .hero-content h1 { font-size: 2rem; }
+  .hero-panels { flex-direction: column; }
+  .hero-panel:first-child { border-right: none; border-bottom: 1px solid #e8e0d8; }
   .nav-links { gap: 1rem; }
   .logo-sub { display: none; }
   .nav-cta { padding: 0.4rem 0.9rem; }
