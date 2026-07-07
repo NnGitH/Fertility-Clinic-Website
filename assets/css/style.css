@@ -145,7 +145,7 @@ ul { list-style: none; }
   text-align: left;
   border-right: 1px solid rgba(255,255,255,0.25);
   align-self: flex-start; 
-  margin-top:-10%; 
+  margin-top:-15%; 
 }
 
 .hero-panel.panel-right {
