@@ -118,7 +118,7 @@ ul { list-style: none; }
 
 .hero-content h1 {
   font-family: var(--font-heading);
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   font-weight: 400;
   line-height: 1.2;
