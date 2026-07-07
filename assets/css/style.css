@@ -240,3 +240,108 @@ footer p { margin-bottom: 0.3rem; }
 .section h1 { font-size: 2.2rem; }
 .section h2 { font-size: 1.7rem; margin-top: 2.5rem; }
 .section
+
+/* =====================
+   PATIENT JOURNEY SECTION
+   ===================== */
+.journey-section {
+  background: #fff;
+  padding: 3.5rem 3rem 3rem;
+  border-top: 1px solid #e8e0d8;
+}
+
+.journey-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.journey-timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.journey-connector {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: #ccc;
+  z-index: 0;
+}
+
+.journey-node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.75rem;
+  position: relative;
+  z-index: 1;
+}
+
+.journey-circle {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  cursor: default;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.journey-circle span {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.journey-circle.active,
+.journey-circle:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.journey-circle.active span,
+.journey-circle:hover span {
+  color: #fff;
+}
+
+.journey-node h4 {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+.journey-node p {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+}
+
+/* Also update hero to only show one panel */
+.hero-panels {
+  padding-bottom: 0;
+}
+
+.hero-panel.panel-left {
+  max-width: 520px;
+}
