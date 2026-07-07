@@ -11,17 +11,21 @@ title: Home
   </div>
 </section>
 
-<section class="content-section">
-  <h2>Our Approach</h2>
-  <p>We combine evidence-based medicine with a deeply human approach. Every patient receives a personalised care plan developed by our specialist consultants — no protocols, no shortcuts. Just thoughtful, expert guidance tailored to your unique situation.</p>
-</section>
+<section class="cards-row">
 
-<section class="content-section">
-  <h2>Inclusion</h2>
-  <p>NovaLife Medica welcomes individuals and couples of all backgrounds, orientations, and nationalities. Whether you are a local resident, visiting from the EU, the UK, or beyond — you will find a safe, respectful, and affirming environment here.</p>
-</section>
+  <div class="info-card">
+    <h3>Our Approach</h3>
+    <p>We combine evidence-based medicine with a deeply human approach. Every patient receives a personalised care plan — no protocols, no shortcuts. Just thoughtful, expert guidance tailored to you.</p>
+  </div>
 
-<section class="content-section">
-  <h2>Patient Journey</h2>
-  <p>Your journey begins with a confidential consultation where we listen, assess, and advise. From initial assessment through to treatment planning and ongoing support, we walk alongside you at every stage — with clarity, compassion, and complete discretion.</p>
+  <div class="info-card">
+    <h3>Inclusion</h3>
+    <p>NovaLife Medica welcomes individuals and couples of all backgrounds, orientations, and nationalities — from Cyprus, the EU, the UK, and beyond. A safe, respectful, and affirming environment for all.</p>
+  </div>
+
+  <div class="info-card">
+    <h3>Patient Journey</h3>
+    <p>Your journey begins with a confidential consultation. From initial assessment through to treatment planning and ongoing support, we walk alongside you at every stage — with clarity and complete discretion.</p>
+  </div>
+
 </section>
