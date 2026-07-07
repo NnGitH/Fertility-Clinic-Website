@@ -130,8 +130,8 @@ ul { list-style: none; }
    ===================== */
 .hero-panels {
   display: flex;
-  gap: 0;
-  width: 75%;
+  gap: 3;
+  width: 100%;
   align-items: flex-end;
 }
 
