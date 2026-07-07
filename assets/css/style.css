@@ -131,7 +131,7 @@ ul { list-style: none; }
 .hero-panels {
   display: flex;
   gap: 0;
-  width: 150%;
+  width: 75%;
   align-items: flex-end;
 }
 
