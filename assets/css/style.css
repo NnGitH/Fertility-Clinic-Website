@@ -1,4 +1,130 @@
 /* =====================
+   VARIABLES & RESET
+   ===================== */
+:root {
+  --navy: #2c3e50;
+  --teal: #2c5f7a;
+  --gold: #c9a96e;
+  --text-mid: #555;
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: var(--font-body);
+  color: var(--navy);
+  background: #fff;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* =====================
+   HEADER / NAV
+   ===================== */
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.97);
+  border-bottom: 1px solid #e8e0d8;
+  height: 72px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-main {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--navy);
+  letter-spacing: 0.04em;
+}
+
+.logo-sub {
+  font-size: 0.65rem;
+  color: var(--gold);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--navy);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  border: 1px solid var(--navy) !important;
+  padding: 0.45rem 1.2rem;
+  transition: background 0.2s, color 0.2s !important;
+}
+
+.nav-cta:hover {
+  background: var(--navy) !important;
+  color: white !important;
+}
+
+/* =====================
+   HERO SECTION
+   ===================== */
+.hero {
+  background-image: linear-gradient(rgba(44,95,122,0.55), rgba(44,95,122,0.4)),
+    url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 72px);
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem 0;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  color: white;
+  font-weight: 400;
+  line-height: 1.2;
+  max-width: 750px;
+}
+
+/* =====================
    HERO BOTTOM PANELS
    ===================== */
 .hero-panels {
@@ -77,3 +203,37 @@
   width: 80%;
   text-align: center;
 }
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  background: var(--navy);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+  padding: 1.2rem 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+footer p { margin-bottom: 0.3rem; }
+
+/* =====================
+   CONTENT PAGES (non-home)
+   ===================== /
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.section h1, .section h2 {
+  font-family: var(--font-heading);
+  color: var(--navy);
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.section h1 { font-size: 2.2rem; }
+.section h2 { font-size: 1.7rem; margin-top: 2.5rem; }
+.section
