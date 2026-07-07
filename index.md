@@ -6,26 +6,15 @@ title: Home
 <section class="hero">
   <div class="hero-content">
     <h1>Your Journey to Parenthood Begins Here</h1>
-    <p>Expert fertility consultation in Cyprus. Compassionate, discreet, and personalised care — every step of the way.</p>
-    <a href="/fertility-clinic/consultation" class="btn btn-primary">Book a Consultation</a>
   </div>
-</section>
-
-<section class="cards-row">
-
-  <div class="info-card">
-    <h3>Our Approach</h3>
-    <p>We combine evidence-based medicine with a deeply human approach. Every patient receives a personalised care plan — no protocols, no shortcuts. Just thoughtful, expert guidance tailored to you.</p>
+  <div class="hero-panels">
+    <div class="hero-panel">
+      <h3>Our Approach</h3>
+      <p>Where clinical rigour meets personalised thinking. NovaLife Medica provides expert evidence-based fertility consultations at the clinical decision level, with personalised treatment planning built around each patient's diagnostic picture — through ethical transparency and a collaborative network of accredited specialists — for all individuals and couples regardless of background or family structure.</p>
+    </div>
+    <div class="hero-panel">
+      <h3>Patient Journey</h3>
+      <p>A structured, transparent pathway from first contact through to treatment planning and ongoing support — with clarity, compassion, and complete discretion at every stage.</p>
+    </div>
   </div>
-
-  <div class="info-card">
-    <h3>Inclusion</h3>
-    <p>NovaLife Medica welcomes individuals and couples of all backgrounds, orientations, and nationalities — from Cyprus, the EU, the UK, and beyond. A safe, respectful, and affirming environment for all.</p>
-  </div>
-
-  <div class="info-card">
-    <h3>Patient Journey</h3>
-    <p>Your journey begins with a confidential consultation. From initial assessment through to treatment planning and ongoing support, we walk alongside you at every stage — with clarity and complete discretion.</p>
-  </div>
-
 </section>
