@@ -21,22 +21,27 @@ title: Home
         <div class="journey-node">
           <div class="journey-circle active"><span>01</span></div>
           <h4>Initial Consultation</h4>
+          <p>A comprehensive consultation with the specialist to review medical history, discuss concerns, and outline the diagnostic approach.</p>
         </div>
         <div class="journey-node">
           <div class="journey-circle"><span>02</span></div>
           <h4>Diagnostic Assessment</h4>
+          <p>Targeted investigations including hormonal assessment, ultrasound, and semen analysis as clinically indicated.</p>
         </div>
         <div class="journey-node">
           <div class="journey-circle"><span>03</span></div>
           <h4>Treatment Planning</h4>
+          <p>A personalised treatment plan presented with full discussion of options, realistic expectations, and costs.</p>
         </div>
         <div class="journey-node">
           <div class="journey-circle"><span>04</span></div>
           <h4>Treatment &amp; Monitoring</h4>
+          <p>Treatment delivered under close consultant oversight with timely monitoring appointments throughout the cycle.</p>
         </div>
         <div class="journey-node">
           <div class="journey-circle"><span>05</span></div>
           <h4>Ongoing Support</h4>
+          <p>Results reviewed in follow-up consultation. Ongoing care coordinated with referring or collaborating physicians.</p>
         </div>
       </div>
     </div>
