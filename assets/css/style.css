@@ -139,6 +139,7 @@ ul { list-style: none; }
   flex: 1;
   padding: 2rem 2.5rem;
   background: transparent;
+  max-width: 75%;
 }
 
 .hero-panel.panel-left {
