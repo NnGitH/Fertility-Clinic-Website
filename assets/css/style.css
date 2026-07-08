@@ -128,10 +128,28 @@ ul { list-style: none; }
 /* =====================
    HERO BOTTOM PANELS
    ===================== */
-.hero-bottom {
+.hero-panels {
   display: flex;
-  flex-direction: column;
+  gap: 0;
   width: 100%;
+  align-items: flex-end;
+}
+
+.hero-panel {
+  flex: 1;
+  padding: 2rem 3rem;
+  background: transparent;
+  max-width: 50%;
+}
+
+.hero-panel.panel-left {
+  text-align: left;
+  align-self: flex-start;
+  margin-top: -15%;
+}
+
+.hero-panel.panel-right {
+  text-align: left;
 }
 
 .panel-label {
@@ -158,6 +176,77 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.82);
   font-size: 0.85rem;
   line-height: 1.7;
+}
+
+/* =====================
+   JOURNEY DIAGRAM
+   ===================== */
+.journey-timeline {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.journey-connector {
+  position: absolute;
+  top: 27px;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: rgba(255,255,255,0.3);
+  z-index: 0;
+}
+
+.journey-node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 0.3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.journey-circle {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.5);
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+  cursor: default;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.journey-circle span {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.7);
+  transition: color 0.3s;
+}
+
+.journey-circle.active,
+.journey-circle:hover {
+  background: rgba(255,255,255,0.95);
+  border-color: white;
+}
+
+.journey-circle.active span,
+.journey-circle:hover span {
+  color: var(--navy);
+}
+
+.journey-node h4 {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.4;
 }
 
 /* =====================
@@ -176,7 +265,7 @@ footer p { margin-bottom: 0.3rem; }
 
 /* =====================
    CONTENT PAGES (non-home)
-   ===================== /
+   ===================== */
 .section {
   max-width: 900px;
   margin: 0 auto;
@@ -192,236 +281,3 @@ footer p { margin-bottom: 0.3rem; }
 
 .section h1 { font-size: 2.2rem; }
 .section h2 { font-size: 1.7rem; margin-top: 2.5rem; }
-.section
-
-/* =====================
-   PATIENT JOURNEY SECTION
-   ===================== */
-.journey-section {
-  background: #fff;
-  padding: 3.5rem 3rem 3rem;
-  border-top: 1px solid #e8e0d8;
-}
-
-.journey-label {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-mid);
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.journey-timeline {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.journey-connector {
-  position: absolute;
-  top: 30px;
-  left: 10%;
-  right: 10%;
-  height: 1px;
-  background: #ccc;
-  z-index: 0;
-}
-
-.journey-node {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0 0.75rem;
-  position: relative;
-  z-index: 1;
-}
-
-.journey-circle {
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  border: 1px solid #aaa;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.2rem;
-  cursor: default;
-  transition: background 0.3s, border-color 0.3s, color 0.3s;
-}
-
-.journey-circle span {
-  font-family: var(--font-body);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  color: #888;
-  transition: color 0.3s;
-}
-
-.journey-circle.active,
-.journey-circle:hover {
-  background: var(--navy);
-  border-color: var(--navy);
-}
-
-.journey-circle.active span,
-.journey-circle:hover span {
-  color: #fff;
-}
-
-.journey-node h4 {
-  font-family: var(--font-body);
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--navy);
-  margin-bottom: 0.6rem;
-  letter-spacing: 0.01em;
-}
-
-.journey-node p {
-  font-size: 0.8rem;
-  color: var(--text-mid);
-  line-height: 1.65;
-}
-
-/* Also update hero to only show one panel */
-.hero-panels {
-  padding-bottom: 0;
-}
-
-.hero-panel.panel-left {
-  max-width: 520px;
-}
-
-/* =====================
-   HERO BOTTOM LAYOUT
-   ===================== */
-.hero-panel {
-  padding: 2rem 3rem;
-  background: transparent;
-  text-align: left;
-  max-width: 520px;
-}
-
-.panel-label {
-  display: block;
-  font-family: var(--font-body);
-  color: rgba(255,255,255,0.7);
-  font-size: 0.8rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 0.6rem;
-}
-
-.hero-panel h3 {
-  font-family: var(--font-heading);
-  color: white;
-  font-size: 1.05rem;
-  font-weight: 400;
-  font-style: italic;
-  margin-bottom: 0.7rem;
-  line-height: 1.4;
-}
-
-.hero-panel p {
-  color: rgba(255,255,255,0.82);
-  font-size: 0.85rem;
-  line-height: 1.7;
-}
-
-/* =====================
-   JOURNEY INSIDE HERO
-   ===================== */
-.hero-journey {
-  width: 100%;
-  padding: 1.5rem 3rem 2.5rem;
-  background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(4px);
-}
-
-.hero-journey .panel-label {
-  display: block;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-.journey-timeline {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.journey-connector {
-  position: absolute;
-  top: 28px;
-  left: 5%;
-  right: 5%;
-  height: 1px;
-  background: rgba(255,255,255,0.3);
-  z-index: 0;
-}
-
-.journey-node {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0 0.6rem;
-  position: relative;
-  z-index: 1;
-}
-
-.journey-circle {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.5);
-  background: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  cursor: default;
-  transition: background 0.3s, border-color 0.3s;
-}
-
-.journey-circle span {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.7);
-  transition: color 0.3s;
-}
-
-.journey-circle.active,
-.journey-circle:hover {
-  background: rgba(255,255,255,0.95);
-  border-color: white;
-}
-
-.journey-circle.active span,
-.journey-circle:hover span {
-  color: var(--navy);
-}
-
-.journey-node h4 {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.01em;
-}
-
-.journey-node p {
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.75);
-  line-height: 1.6;
-}
