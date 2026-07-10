@@ -110,7 +110,7 @@ ul { list-style: none; }
 .hero-content {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   text-align: center;
 }
