@@ -18,17 +18,6 @@ title: Home
     <div class="hero-panel panel-right">
       <span class="panel-label">— Patient Journey</span>
       <h3>A structured, transparent pathway from first contact to ongoing care.</h3>
-      <div class="journey-steps">
-        <div class="journey-step">Initial Consultation</div>
-        <div class="journey-arrow">↓</div>
-        <div class="journey-step">Diagnostic Assessment</div>
-        <div class="journey-arrow">↓</div>
-        <div class="journey-step">Treatment Planning</div>
-        <div class="journey-arrow">↓</div>
-        <div class="journey-step">Treatment &amp; Monitoring</div>
-        <div class="journey-arrow">↓</div>
-        <div class="journey-step">Ongoing Support</div>
-      </div>
     </div>
 
   </div>
