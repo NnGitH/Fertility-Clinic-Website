@@ -122,6 +122,7 @@ ul { list-style: none; }
   font-weight: 400;
   line-height: 1.2;
   max-width: 750px;
+  margin-top: -5rem;
 }
 
 /* =====================
